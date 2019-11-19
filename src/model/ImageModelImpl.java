@@ -33,10 +33,8 @@ public class ImageModelImpl implements IImageModel {
   }
 
   @Override
-  public IReadOnlyImage getImageData() {
-    BufferedImage bufferedImage = createImage(image.getPixelInformation());
-
-    return new ReadonlyImageImpl(bufferedImage);
+  public BufferedImage getImageData() {
+    return createImage(image.getPixelInformation());
   }
 
   /**

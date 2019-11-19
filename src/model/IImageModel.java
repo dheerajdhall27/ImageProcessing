@@ -1,5 +1,7 @@
 package model;
 
+import java.awt.image.BufferedImage;
+
 /**
  * This interface represents an interface for an Image, which provides methods like filter and
  * transformation that can be applied to an image.
@@ -22,5 +24,5 @@ public interface IImageModel {
    *
    * @return the ReadOnly data for the Image.
    */
-  IReadOnlyImage getImageData();
+  BufferedImage getImageData();
 }

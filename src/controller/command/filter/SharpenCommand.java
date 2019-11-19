@@ -1,5 +1,6 @@
-package controller.command;
+package controller.command.filter;
 
+import controller.command.ICommand;
 import model.IImageModel;
 
 /**

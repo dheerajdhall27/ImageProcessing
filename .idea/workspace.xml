@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ff6a92-5103-451c-908d-106f100e2da3" name="Default Changelist" comment="" />
+    <list default="true" id="d9ff6a92-5103-451c-908d-106f100e2da3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/controller/command/transformation/GreyScaleCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImageMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/command/BlurCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/command/filter/BlurCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/command/SharpenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/command/filter/SharpenCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/IImageModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/IImageModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/IReadOnlyImage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ImageModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ImageModelImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ReadonlyImageImpl.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +24,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TMH8476QnL63he9OJ5NUlcUrbB" />
   <component name="PropertiesComponent">
@@ -66,11 +78,23 @@
       <workItem from="1573686008215" duration="2500000" />
       <workItem from="1574053382372" duration="5000" />
       <workItem from="1574114549546" duration="13379000" />
+      <workItem from="1574139594596" duration="56000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

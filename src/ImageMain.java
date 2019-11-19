@@ -1,7 +1,6 @@
-import controller.command.BlurCommand;
+import controller.command.filter.BlurCommand;
 import controller.command.ICommand;
 import controller.command.SaveCommand;
-import controller.command.SharpenCommand;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -18,27 +17,27 @@ public class ImageMain {
 
   public static void main(String[] args) {
     try {
-      BufferedImage bufferedImage = ImageIO.read(new File("test.png"));
+      BufferedImage bufferedImage = ImageIO.read(new File("rahul.png"));
       int imgWidth = bufferedImage.getWidth();
       int imgHeight = bufferedImage.getHeight();
 
       float[][][] imageInformation = getImageInformation(bufferedImage, imgWidth, imgHeight);
 
       IImageModel imageModel = new ImageModelImpl(new ImageImpl(imageInformation));
-//      ICommand blurCommand = new BlurCommand(imageModel);
-//      blurCommand.execute();
+      ICommand blurCommand = new BlurCommand(imageModel);
+      blurCommand.execute();
+
+      // Save the File
+      ICommand saveCommand = new SaveCommand(imageModel.getImageData(),
+          "Images/blurred.png");
+      saveCommand.execute();
+
+//      ICommand sharpenCommand = new SharpenCommand(imageModel);
+//      sharpenCommand.execute();
 //
-//      // Save the File
-//      ICommand saveCommand = new SaveCommand(imageModel.getImageData().getBufferedImageData(),
-//          "Images/blurred.png");
-//      saveCommand.execute();
-
-      ICommand sharpenCommand = new SharpenCommand(imageModel);
-      sharpenCommand.execute();
-
-      ICommand saveCommand2 = new SaveCommand(imageModel.getImageData().getBufferedImageData(),
-          "Images/sharpened.png");
-      saveCommand2.execute();
+//      ICommand saveCommand2 = new SaveCommand(imageModel.getImageData(),
+//          "Images/sharpened.png");
+//      saveCommand2.execute();
 
 
     } catch (IOException e) {
