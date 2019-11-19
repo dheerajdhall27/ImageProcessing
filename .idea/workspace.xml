@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9ff6a92-5103-451c-908d-106f100e2da3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/command/transformation/GreyScaleCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/command/transformation/SepiaCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/blurred.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/sharpened.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/ImageMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/ImageMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/META-INF/FunWithImages.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/BlurCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/SharpenCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/IImageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/IImageModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/IReadOnlyImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/ImageModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/ImageModelImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/ReadonlyImageImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ImageMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/command/BlurCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/command/filter/BlurCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/command/SharpenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/command/filter/SharpenCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/command/transformation/GreyScaleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/command/transformation/GreyScaleCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/IImageModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/IImageModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/IReadOnlyImage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/ImageModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ImageModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ReadonlyImageImpl.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +86,7 @@
       <workItem from="1573686008215" duration="2500000" />
       <workItem from="1574053382372" duration="5000" />
       <workItem from="1574114549546" duration="13379000" />
-      <workItem from="1574139594596" duration="56000" />
+      <workItem from="1574139594596" duration="3873000" />
     </task>
     <servers />
   </component>
@@ -95,16 +103,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/model/ImageModelImpl.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

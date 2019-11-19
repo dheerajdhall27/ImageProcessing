@@ -1,6 +1,9 @@
 import controller.command.filter.BlurCommand;
 import controller.command.ICommand;
 import controller.command.SaveCommand;
+import controller.command.filter.SharpenCommand;
+import controller.command.transformation.GreyScaleCommand;
+import controller.command.transformation.SepiaCommand;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -24,13 +27,13 @@ public class ImageMain {
       float[][][] imageInformation = getImageInformation(bufferedImage, imgWidth, imgHeight);
 
       IImageModel imageModel = new ImageModelImpl(new ImageImpl(imageInformation));
-      ICommand blurCommand = new BlurCommand(imageModel);
-      blurCommand.execute();
-
-      // Save the File
-      ICommand saveCommand = new SaveCommand(imageModel.getImageData(),
-          "Images/blurred.png");
-      saveCommand.execute();
+//      ICommand blurCommand = new BlurCommand(imageModel);
+//      blurCommand.execute();
+//
+////       Save the File
+//      ICommand saveCommand = new SaveCommand(imageModel.getImageData(),
+//          "Images/blurred.png");
+//      saveCommand.execute();
 
 //      ICommand sharpenCommand = new SharpenCommand(imageModel);
 //      sharpenCommand.execute();
@@ -38,6 +41,20 @@ public class ImageMain {
 //      ICommand saveCommand2 = new SaveCommand(imageModel.getImageData(),
 //          "Images/sharpened.png");
 //      saveCommand2.execute();
+
+      ICommand greyScaleCommand = new GreyScaleCommand(imageModel);
+      greyScaleCommand.execute();
+
+      ICommand saveCommand3 = new SaveCommand(imageModel.getImageData(),
+          "Images/greyScale.png");
+      saveCommand3.execute();
+
+      ICommand sepiaCommand = new SepiaCommand(imageModel);
+      sepiaCommand.execute();
+
+      ICommand saveCommand4 = new SaveCommand(imageModel.getImageData(),
+          "Images/sepia.png");
+      saveCommand4.execute();
 
 
     } catch (IOException e) {

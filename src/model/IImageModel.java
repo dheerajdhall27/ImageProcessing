@@ -17,6 +17,13 @@ public interface IImageModel {
    */
   void filter(float[][] kernel) throws IllegalArgumentException;
 
+  /**
+   * This method is used to transform this Image by using the matrix provided.
+   *
+   * @param matrix the matrix used to apply the transformation
+   * @throws IllegalArgumentException if the matrix provided is null.
+   */
+  void transform(float[][] matrix) throws IllegalArgumentException;
 
   /**
    * This method is used to return the ReadOnly data for the Image so that the image cannot be

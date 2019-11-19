@@ -33,8 +33,60 @@ public class ImageModelImpl implements IImageModel {
   }
 
   @Override
+  public void transform(float[][] matrix) throws IllegalArgumentException {
+    float[][][] pixelInformation = image.getPixelInformation();
+    float[][][] newPixelInformation = new float[pixelInformation.length][pixelInformation[0].length]
+        [pixelInformation[0][0].length];
+    transformImage(pixelInformation, newPixelInformation, matrix);
+    image.setPixelInformation(pixelInformation);
+  }
+
+  @Override
   public BufferedImage getImageData() {
     return createImage(image.getPixelInformation());
+  }
+
+  private void transformImage(float[][][] pixelInformation, float[][][] newPixelInformation,
+      float[][] matrix) {
+    for (int i = 0; i < pixelInformation.length; i++) {
+      for (int j = 0; j < pixelInformation[0].length; j++) {
+        float[][] values = multiplyMatrix(matrix, new float[][]{
+            {pixelInformation[i][j][0]},
+            {pixelInformation[i][j][1]},
+            {pixelInformation[i][j][2]},
+        });
+        newPixelInformation[i][j][0] = values[0][0];
+        newPixelInformation[i][j][1] = values[1][0];
+        newPixelInformation[i][j][2] = values[2][0];
+      }
+    }
+
+    copyMatrixValues(pixelInformation, newPixelInformation);
+  }
+
+  private float[][] multiplyMatrix(float[][] matrix, float[][] channelMatrix) {
+    if (matrix[0].length != matrix.length) {
+      throw new IllegalArgumentException("The Matrices cannot be multiplied!");
+    }
+    float[][] newMatrix = new float[matrix.length][channelMatrix[0].length];
+
+    for (int i = 0; i < matrix.length; i++) {
+      for (int j = 0; j < channelMatrix[0].length; j++) {
+        newMatrix[i][j] = 0;
+        float value = 0;
+        for (int k = 0; k < matrix[0].length; k++) {
+          value += matrix[i][k] * channelMatrix[k][j];
+        }
+        if (value > 255) {
+          value = 255.0f;
+        } else if (value < 0) {
+          value = 0.0f;
+        }
+        newMatrix[i][j] = value;
+      }
+    }
+
+    return newMatrix;
   }
 
   /**
@@ -56,7 +108,10 @@ public class ImageModelImpl implements IImageModel {
         }
       }
     }
+    copyMatrixValues(pixelInformation, newPixelInformation);
+  }
 
+  private void copyMatrixValues(float[][][] pixelInformation, float[][][] newPixelInformation) {
     for (int i = 0; i < pixelInformation.length; i++) {
       for (int j = 0; j < pixelInformation[i].length; j++) {
         for (int k = 0; k < pixelInformation[i][j].length; k++) {
