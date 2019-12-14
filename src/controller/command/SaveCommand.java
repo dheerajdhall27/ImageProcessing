@@ -5,6 +5,9 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
+/**
+ * This class represents a save command which is used to save an image's data.s
+ */
 public class SaveCommand implements ICommand {
 
   private BufferedImage bufferedImage;

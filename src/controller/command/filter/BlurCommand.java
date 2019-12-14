@@ -2,12 +2,11 @@ package controller.command.filter;
 
 import controller.command.ICommand;
 import model.IImageModel;
+import model.kernel.KernelType;
 
 public class BlurCommand implements ICommand {
 
   private IImageModel model;
-
-  private float[][] kernel;
 
   /**
    * This Constructor is used to create a Blur Command Object, which is used to blur a specific
@@ -22,17 +21,11 @@ public class BlurCommand implements ICommand {
           "The model passed is null! Please pass an appropriate model");
     }
 
-    kernel = new float[][]{
-        {1f / 16, 1f / 8, 1f / 16},
-        {1f / 8, 1f / 4, 1f / 8},
-        {1f / 16, 1f / 8, 1f / 16},
-    };
-    
     this.model = model;
   }
 
   @Override
   public void execute() {
-    model.filter(kernel);
+    model.filter(KernelType.BLUR);
   }
 }
