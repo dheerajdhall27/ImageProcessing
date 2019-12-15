@@ -2,7 +2,7 @@ package controller.command.transformation;
 
 import controller.command.ICommand;
 import model.IImageModel;
-import model.matrix.TransformationType;
+import model.matrix.ETransformationType;
 
 
 /**
@@ -18,6 +18,6 @@ public class SepiaCommand implements ICommand {
 
   @Override
   public void execute() {
-    imageModel.transform(TransformationType.SEPIA);
+    imageModel.transform(ETransformationType.SEPIA);
   }
 }

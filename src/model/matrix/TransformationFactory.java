@@ -6,9 +6,9 @@ package model.matrix;
 public class TransformationFactory implements ITransformationFactory {
 
   @Override
-  public ITransformations createTransformation(TransformationType transformationType) {
+  public ITransformations createTransformation(ETransformationType ETransformationType) {
     ITransformations transformation;
-    switch (transformationType) {
+    switch (ETransformationType) {
       case GREY_SCALE:
         transformation = new GreyScaleTransformation();
         break;

@@ -3,9 +3,9 @@ package model;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import model.kernel.KernelFactory;
-import model.kernel.KernelType;
+import model.kernel.EKernelType;
 import model.matrix.TransformationFactory;
-import model.matrix.TransformationType;
+import model.matrix.ETransformationType;
 
 /**
  * This class represents the implementation of the {@link IImageModel} interface, it represents an
@@ -27,23 +27,23 @@ public class ImageModelImpl implements IImageModel {
   }
 
   @Override
-  public void filter(KernelType kernelType) throws IllegalArgumentException {
+  public void filter(EKernelType EKernelType) throws IllegalArgumentException {
     float[][][] pixelInformation = image.getPixelInformation();
     float[][][] newPixelInformation = new float[pixelInformation.length][pixelInformation[0].length]
         [pixelInformation[0][0].length];
 
     updatePixelInformation(pixelInformation, newPixelInformation,
-        new KernelFactory().createKernel(kernelType).getKernelData());
+        new KernelFactory().createKernel(EKernelType).getKernelData());
     image.setPixelInformation(pixelInformation);
   }
 
   @Override
-  public void transform(TransformationType transformationType) throws IllegalArgumentException {
+  public void transform(ETransformationType ETransformationType) throws IllegalArgumentException {
     float[][][] pixelInformation = image.getPixelInformation();
     float[][][] newPixelInformation = new float[pixelInformation.length][pixelInformation[0].length]
         [pixelInformation[0][0].length];
     transformImage(pixelInformation, newPixelInformation,
-        new TransformationFactory().createTransformation(transformationType).getMatrixData());
+        new TransformationFactory().createTransformation(ETransformationType).getMatrixData());
     image.setPixelInformation(pixelInformation);
   }
 

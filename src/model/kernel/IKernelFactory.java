@@ -8,9 +8,9 @@ public interface IKernelFactory {
   /**
    * This method is used to create a Kernel based on the Type of kernel parameter.
    *
-   * @param kernelType the type of Kernel that needs to be created
+   * @param EKernelType the type of Kernel that needs to be created
    * @return Returns the type of kernel that was created.
    * @throws IllegalArgumentException if the kernelType provided is invalid
    */
-  IKernel createKernel(KernelType kernelType) throws IllegalArgumentException;
+  IKernel createKernel(EKernelType EKernelType) throws IllegalArgumentException;
 }

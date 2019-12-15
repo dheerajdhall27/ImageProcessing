@@ -1,8 +1,8 @@
 package model;
 
 import java.awt.image.BufferedImage;
-import model.kernel.KernelType;
-import model.matrix.TransformationType;
+import model.kernel.EKernelType;
+import model.matrix.ETransformationType;
 
 /**
  * This interface represents an interface for an Image, which provides methods like filter and
@@ -14,18 +14,18 @@ public interface IImageModel {
    * This method is used to apply a particular filter to the image. It takes in a Kernel that can be
    * used to apply filter like blur. sharpen
    *
-   * @param kernelType represents the kernel that is used the filter to the Image (an enum).
+   * @param EKernelType represents the kernel that is used the filter to the Image (an enum).
    * @throws IllegalArgumentException if the provided Kernel is null.
    */
-  void filter(KernelType kernelType) throws IllegalArgumentException;
+  void filter(EKernelType EKernelType) throws IllegalArgumentException;
 
   /**
    * This method is used to transform this Image by using the matrix provided.
    *
-   * @param transformationType the transformation type used to apply the transformation
+   * @param ETransformationType the transformation type used to apply the transformation
    * @throws IllegalArgumentException if the matrix provided is null.
    */
-  void transform(TransformationType transformationType) throws IllegalArgumentException;
+  void transform(ETransformationType ETransformationType) throws IllegalArgumentException;
 
   /**
    * This method is used to return the ReadOnly data for the Image so that the image cannot be
@@ -36,5 +36,12 @@ public interface IImageModel {
   BufferedImage getImageData();
 
 
-  BufferedImage generateImage();
+  /**
+   * This method is used to generate an image with the dimensions specified by the user
+   *
+   * @param width  the width of the image that has to be generated
+   * @param height the height of the image that has to be generated
+   * @return a BufferedImage object with image data
+   */
+  BufferedImage generateImage(int width, int height);
 }

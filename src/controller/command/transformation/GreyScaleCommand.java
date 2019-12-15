@@ -2,7 +2,7 @@ package controller.command.transformation;
 
 import controller.command.ICommand;
 import model.IImageModel;
-import model.matrix.TransformationType;
+import model.matrix.ETransformationType;
 
 /**
  * This class is used to create a GreyScale of an image by applying the changes.
@@ -17,6 +17,6 @@ public class GreyScaleCommand implements ICommand {
 
   @Override
   public void execute() {
-    imageModel.transform(TransformationType.GREY_SCALE);
+    imageModel.transform(ETransformationType.GREY_SCALE);
   }
 }

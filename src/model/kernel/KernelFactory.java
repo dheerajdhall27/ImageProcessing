@@ -6,9 +6,9 @@ package model.kernel;
 public class KernelFactory implements IKernelFactory {
 
   @Override
-  public IKernel createKernel(KernelType kernelType) {
+  public IKernel createKernel(EKernelType EKernelType) {
     IKernel kernel;
-    switch (kernelType) {
+    switch (EKernelType) {
       case BLUR:
         kernel = new BlurKernel();
         break;

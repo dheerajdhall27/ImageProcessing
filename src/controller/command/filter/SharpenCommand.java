@@ -2,7 +2,7 @@ package controller.command.filter;
 
 import controller.command.ICommand;
 import model.IImageModel;
-import model.kernel.KernelType;
+import model.kernel.EKernelType;
 
 /**
  * This class represents the filter command for Sharpening the Image.
@@ -26,6 +26,6 @@ public class SharpenCommand implements ICommand {
 
   @Override
   public void execute() {
-    imageModel.filter(KernelType.SHARPEN);
+    imageModel.filter(EKernelType.SHARPEN);
   }
 }

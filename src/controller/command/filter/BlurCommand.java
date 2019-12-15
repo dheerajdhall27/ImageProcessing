@@ -2,7 +2,7 @@ package controller.command.filter;
 
 import controller.command.ICommand;
 import model.IImageModel;
-import model.kernel.KernelType;
+import model.kernel.EKernelType;
 
 public class BlurCommand implements ICommand {
 
@@ -26,6 +26,6 @@ public class BlurCommand implements ICommand {
 
   @Override
   public void execute() {
-    model.filter(KernelType.BLUR);
+    model.filter(EKernelType.BLUR);
   }
 }
