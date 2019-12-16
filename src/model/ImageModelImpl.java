@@ -2,10 +2,12 @@ package model;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
+import model.flags.EFlags;
 import model.kernel.KernelFactory;
 import model.kernel.EKernelType;
 import model.matrix.TransformationFactory;
 import model.matrix.ETransformationType;
+import util.Utility;
 
 /**
  * This class represents the implementation of the {@link IImageModel} interface, it represents an
@@ -14,6 +16,10 @@ import model.matrix.ETransformationType;
 public class ImageModelImpl implements IImageModel {
 
   private IImage image;
+
+  public ImageModelImpl() {
+
+  }
 
   /**
    * This Constructor is used to create an object of ImageModel, which can be used to apply filter
@@ -53,7 +59,20 @@ public class ImageModelImpl implements IImageModel {
   }
 
   @Override
-  public BufferedImage generateImage() {
+  public BufferedImage generateFlag(int width, int height, EFlags flagType) {
+    if (Utility.FLAG_MAP.size() == 0) {
+      Utility.initializeMap();
+    }
+
+    if (Utility.FLAG_MAP.containsKey(flagType)) {
+      return Utility.FLAG_MAP.get(flagType).generateImage(width, height);
+    }
+
+    return null;
+  }
+
+  @Override
+  public BufferedImage generateImage(int width, int height) {
     return null;
   }
 

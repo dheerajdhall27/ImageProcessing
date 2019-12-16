@@ -1,15 +1,16 @@
-package model.flags;
+package model.flags.rainbow;
 
 import java.awt.image.BufferedImage;
 
 /**
- * This class represents an implementation of the Vertical rainbow.
+ * This class represents a Horizontal striped rainbow's implementation.
  */
-public class VerticalRainbow extends AbstractRainbow {
+public class HorizontalRainbow extends AbstractRainbow {
 
   private BufferedImage bufferedImage;
 
-  public VerticalRainbow() {
+
+  public HorizontalRainbow() {
     super();
   }
 
@@ -18,6 +19,6 @@ public class VerticalRainbow extends AbstractRainbow {
     bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
     int dimension = height / rainbowSize;
 
-    return super.getImageData(width, height, dimension, bufferedImage);
+    return super.getImageData(width, height, dimension, bufferedImage, true);
   }
 }

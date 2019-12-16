@@ -1,6 +1,7 @@
 package model;
 
 import java.awt.image.BufferedImage;
+import model.flags.EFlags;
 import model.kernel.EKernelType;
 import model.matrix.ETransformationType;
 
@@ -35,6 +36,16 @@ public interface IImageModel {
    */
   BufferedImage getImageData();
 
+
+  /**
+   * This method is used to generate Flags.
+   *
+   * @param width    the width of the flag
+   * @param height   the height of the flag
+   * @param flagType the type of flag
+   * @return the image data as a buffered image.
+   */
+  BufferedImage generateFlag(int width, int height, EFlags flagType);
 
   /**
    * This method is used to generate an image with the dimensions specified by the user

@@ -3,35 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ff6a92-5103-451c-908d-106f100e2da3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/test.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/ImageMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/ImageMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/SaveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/SaveCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/filter/BlurCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/filter/BlurCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/filter/SharpenCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/filter/SharpenCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/transformation/GreyScaleCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/transformation/GreyScaleCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/transformation/SepiaCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/transformation/SepiaCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/controller/ImageControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/controller/ImageControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/flag/FlagCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/controller/command/flag/FlagCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/IImageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/IImageModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/ImageModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/ImageModelImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/kernel/IKernelFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/kernel/IKernelFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/kernel/KernelFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/kernel/KernelFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/kernel/KernelFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/kernel/KernelFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/kernel/KernelType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/matrix/ITransformationFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/matrix/ITransformationFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/matrix/TransformationFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/matrix/TransformationFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/matrix/TransformationFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/matrix/TransformationFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/matrix/TransformationType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/flags/EColors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/flags/EFlags.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FunWithImages/model/flags/EFlags.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/flags/HorizontalRainbow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FunWithImages/model/flags/VerticalRainbow.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ImageMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/command/filter/BlurCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/command/filter/BlurCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/command/filter/SharpenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/command/filter/SharpenCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/command/transformation/GreyScaleCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/command/transformation/GreyScaleCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/command/transformation/SepiaCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/command/transformation/SepiaCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ImageControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ImageControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/command/flag/FlagCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/command/flag/FlagCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/IImageModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/IImageModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/ImageModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ImageModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/kernel/IKernelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/kernel/IKernelFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/kernel/KernelFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/kernel/KernelFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/kernel/KernelType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/kernel/EKernelType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/matrix/ITransformationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/matrix/ITransformationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/matrix/TransformationFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/matrix/TransformationFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/matrix/TransformationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/matrix/ETransformationType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/flags/AbstractRainbow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/flags/rainbow/AbstractRainbow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/flags/EColors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/flags/EImageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/flags/HorizontalRainbow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/flags/rainbow/HorizontalRainbow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/flags/VerticalRainbow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/flags/rainbow/VerticalRainbow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Utility.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -55,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PDPProjects/Assignments/Stocks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -110,7 +102,8 @@
       <workItem from="1576222605830" duration="5292000" />
       <workItem from="1576267585935" duration="225000" />
       <workItem from="1576284909370" duration="11506000" />
-      <workItem from="1576370244642" duration="16295000" />
+      <workItem from="1576370244642" duration="26246000" />
+      <workItem from="1576509510916" duration="2082000" />
     </task>
     <servers />
   </component>
@@ -137,6 +130,11 @@
           <url>file://$PROJECT_DIR$/src/model/flags/FranceImageGeneration.java</url>
           <line>45</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/flags/rainbow/AbstractRainbow.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
