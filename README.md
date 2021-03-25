@@ -2,5 +2,5 @@
 Image Processing
 
 
-This is a Project picked up From one of the Assignments given to Undergraduate students.
+An application to apply transformations to images - Sepia and Grayscale
 
